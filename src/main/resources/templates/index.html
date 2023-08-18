@@ -869,8 +869,7 @@
                             </div>
                         </div>
                         <div class="col-md-7">
-                            <form action="/sendContactMail" method="POST" id="contactForm1" class="contact-us-form"
-                                       novalidate="novalidate">
+                            <form th:action="@{/sendContactMail}" method="POST" id="contactForm1" class="contact-us-form">
                                 <h6>Đừng bỏ lỡ cơ hội</h6>
                                 <div class="row">
                                     <div class="col-sm-6 col-xs-12">
@@ -918,7 +917,7 @@
                                     </div>
                                 </div>
                             </form>
-                                        <p class="form-message"></p>
+<!--                                        <p class="form-message"></p>-->
                                 <div th:if="${message5 != null}" class="alert alert-success">
                                     <strong> <p th:text="${messages5}"></p> </strong>
                                 </div>

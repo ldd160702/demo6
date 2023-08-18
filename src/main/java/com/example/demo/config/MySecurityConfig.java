@@ -62,7 +62,7 @@ public class MySecurityConfig {
                                 .requestMatchers(new AntPathRequestMatcher("/abc")).permitAll()
                                 .requestMatchers(new AntPathRequestMatcher("/lib/**")).permitAll()
                                 .requestMatchers(new AntPathRequestMatcher("/resource/**")).permitAll()
-                                .requestMatchers(new AntPathRequestMatcher("/sendContactMail/**")).permitAll()
+                                .requestMatchers(new AntPathRequestMatcher("/sendContactMail")).permitAll()
                                 .requestMatchers(new AntPathRequestMatcher("/send-email")).permitAll()
                                 .requestMatchers(new AntPathRequestMatcher("/test/upload")).permitAll()
                         //.anyRequest().authenticated()

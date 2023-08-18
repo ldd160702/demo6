@@ -58,6 +58,7 @@ public class WebController {
         return new ModelAndView("redirect:/");
     }
 
+
     @RequestMapping(value = "/login-page", method = RequestMethod.GET)
     public ModelAndView login() {
         return new ModelAndView("login-page");
